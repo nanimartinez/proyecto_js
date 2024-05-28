@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Tienda de Mascotas</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    
+    <div class="container">
+        <section id="order-summary">
+            <h2>Resumen de la Orden</h2>
+            <ul id="cart-items">
+                <!-- Los productos seleccionados se mostrarán aquí -->
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+        </section>
+        
+        <section id="payment-form">
+            <h2>Información de Pago</h2>
+            <form id="payment-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiration-date">Fecha de Expiración:</label>
+                <input type="text" id="expiration-date" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+</html>
